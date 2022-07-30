@@ -1,0 +1,9 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.container {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 0 15px;
+  width: 100%;
+}
