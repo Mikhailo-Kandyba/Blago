@@ -1,2 +1,122 @@
 @import "../utils/variables";
 @import "../utils/mixin";
+
+.title-block {
+  font-family: $font-mulish;
+  font-weight: $font-weight-1000;
+  font-size: $font-size-base + 32;
+  line-height: $line-height-base + 49;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 94px;
+
+  span {
+    border-bottom: 4px solid $witch-haze;
+    letter-spacing: 11px;
+    padding-bottom: 3px;
+  }
+}
+
+.service-wrap {
+  position: relative;
+  min-height: 1400px;
+}
+
+.service-block {
+  max-width: 366px;
+  width: 100%;
+  position: absolute;
+}
+
+.text-area {
+  background: $catskill-white;
+  border-radius: 30px;
+  padding: 16px 11px 10px 21px;
+  line-height: $line-height-base + 8;
+  letter-spacing: 1px;
+  position: relative;
+  top: -51px;
+  z-index: 1;
+
+  strong {
+    font-size: $font-size-base + 17;
+    line-height: $line-height-base + 12;
+    color: $polo-blue;
+  }
+}
+
+.img-area {
+  max-width: 340px;
+  width: 100%;
+}
+
+.arrow-decoration {
+  position: absolute;
+  bottom: 55px;
+  left: 76px;
+  right: 0;
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.arrow-two {
+  z-index: -1;
+  top: 17px;
+}
+
+
+.service-block-two {
+  left: 29%;
+  bottom: 138px;
+  max-width: 574px;
+}
+
+.arrow-decoration-two {
+  top: -55%;
+  left: 53%;
+  right: -2%;
+}
+
+.img-area-two {
+  max-width: 400px;
+}
+
+.text-area-two {
+  max-width: 513px;
+  top: -88px;
+  right: -59px;
+}
+
+.arrow-three {
+  z-index: 1;
+  left: -35px;
+}
+
+.arrow-four {
+  left: -31px;
+  top: 9px;
+}
+
+.service-block-three {
+  right: -98px;
+  top: -40px;
+  max-width: 500px;
+}
+
+.img-area-three {
+  max-width: 435px;
+}
+
+.text-area-three {
+  left: -64px;
+  top: -43px;
+  max-width: 466px;
+  padding: 16px 37px 10px 27px;
+}

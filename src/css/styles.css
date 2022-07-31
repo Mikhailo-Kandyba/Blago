@@ -67,7 +67,8 @@ button {
 
 img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: flex; }
 
 input {
   outline: none;
@@ -130,6 +131,104 @@ input {
     background-image: url("../../images/arrow.svg");
     width: 52px;
     height: 24px; }
+
+.title-block {
+  font-family: "Mulish", sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  line-height: 71px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 94px; }
+  .title-block span {
+    border-bottom: 4px solid #fff590;
+    letter-spacing: 11px;
+    padding-bottom: 3px; }
+
+.service-wrap {
+  position: relative;
+  min-height: 1400px; }
+
+.service-block {
+  max-width: 366px;
+  width: 100%;
+  position: absolute; }
+
+.text-area {
+  background: #f0f3f8;
+  border-radius: 30px;
+  padding: 16px 11px 10px 21px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  position: relative;
+  top: -51px;
+  z-index: 1; }
+  .text-area strong {
+    font-size: 35px;
+    line-height: 34px;
+    color: #7f94cd; }
+
+.img-area {
+  max-width: 340px;
+  width: 100%; }
+
+.arrow-decoration {
+  position: absolute;
+  bottom: 55px;
+  left: 76px;
+  right: 0;
+  z-index: 2; }
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+.arrow-two {
+  z-index: -1;
+  top: 17px; }
+
+.service-block-two {
+  left: 29%;
+  bottom: 138px;
+  max-width: 574px; }
+
+.arrow-decoration-two {
+  top: -55%;
+  left: 53%;
+  right: -2%; }
+
+.img-area-two {
+  max-width: 400px; }
+
+.text-area-two {
+  max-width: 513px;
+  top: -88px;
+  right: -59px; }
+
+.arrow-three {
+  z-index: 1;
+  left: -35px; }
+
+.arrow-four {
+  left: -31px;
+  top: 9px; }
+
+.service-block-three {
+  right: -98px;
+  top: -40px;
+  max-width: 500px; }
+
+.img-area-three {
+  max-width: 435px; }
+
+.text-area-three {
+  left: -64px;
+  top: -43px;
+  max-width: 466px;
+  padding: 16px 37px 10px 27px; }
 
 .header {
   position: absolute;
@@ -256,8 +355,9 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1082px;
-  padding: 275px 0 90px; }
+  min-height: 1075px;
+  padding: 275px 0 90px;
+  margin-bottom: 56px; }
 
 .banner-content {
   display: flex;
