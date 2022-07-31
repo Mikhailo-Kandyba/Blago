@@ -58,8 +58,12 @@ table {
 }
 
 a {
-  color: $white;
+  color: $base-text-color;
   text-decoration: none;
+
+  &:hover {
+    color: $scorpion;
+  }
 }
 
 button {
@@ -84,10 +88,6 @@ input {
 
 * {
   box-sizing: border-box;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 

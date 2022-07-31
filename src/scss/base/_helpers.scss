@@ -1,4 +1,11 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+#wrapper {
+  overflow: hidden;
+  position: relative;
+}
 
+.overflow-hidden {
+  overflow: hidden;
+}

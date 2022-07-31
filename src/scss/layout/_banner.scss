@@ -1,3 +1,52 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+.banner {
+  background-image: url("../../images/banner-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1082px;
+  padding: 275px 0 90px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .img-area {
+    position: absolute;
+    top: 50%;
+    right: -106px;
+    transform: translate(0, -50%);
+    max-width: 885px;
+    width: 100%;
+  }
+}
+
+.information-wrap {
+  max-width: 712px;
+  width: 100%;
+  color: $white;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: $font-mulish;
+  font-weight: $font-weight-1000;
+  font-size: $font-size-base + 78;
+  line-height: $line-height-base + 98;
+  margin-bottom: 70px;
+}
+
+.subtitle {
+  font-size: $font-size-base + 14;
+  line-height: $line-height-base + 27;
+  font-weight: $font-weight-600;
+  max-width: 513px;
+  width: 100%;
+  margin-bottom: 67px;
+}
