@@ -430,6 +430,82 @@ input {
   right: -137px;
   top: -23px; }
 
+.our-philosophy .title-block {
+  margin-bottom: 121px; }
+
+.information-text {
+  font-size: 28px;
+  line-height: 41px;
+  padding: 41px 100px 10px 248px;
+  position: relative;
+  min-height: 450px; }
+  .information-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4000px;
+    right: -4000px;
+    bottom: 0;
+    background: #f0f3f8;
+    z-index: -1; }
+  .information-text:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -126px;
+    background-image: url("../../images/decoration-photo.png");
+    width: 278px;
+    height: 576px;
+    z-index: -1; }
+
+.text-block {
+  background: #fff590;
+  border-radius: 30px;
+  padding: 57px 60px 41px 57px;
+  max-width: 1041px;
+  width: 100%;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2; }
+
+.main-text {
+  line-height: 27px;
+  color: #000;
+  margin-bottom: 5px; }
+  .main-text strong {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 49px;
+    color: #7f94cd; }
+
+.ban-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -10px 38px; }
+  .ban-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0 10px;
+    margin-bottom: 10px; }
+    .ban-list li:nth-child(2) {
+      width: 40%; }
+    .ban-list li:nth-child(3) {
+      width: 25%; }
+  .ban-list .img-area {
+    margin-bottom: 20px; }
+  .ban-list p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    color: #000;
+    letter-spacing: 1px; }
+
 .header {
   position: absolute;
   left: 0;
