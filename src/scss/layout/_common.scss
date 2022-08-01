@@ -34,14 +34,26 @@
   .img-area {
     max-width: 340px;
     width: 100%;
+
+    @include breakpoint($desktop) {
+      max-width: 270px;
+    }
   }
 
   .img-area-two {
     max-width: 400px;
+
+    @include breakpoint($desktop) {
+      max-width: 280px;
+    }
   }
 
   .img-area-three {
     max-width: 435px;
+
+    @include breakpoint($desktop) {
+      max-width: 365px;
+    }
   }
 }
 
@@ -78,9 +90,19 @@
   bottom: 0;
 }
 
+.arrow-one {
+  @include breakpoint($desktop) {
+    width: 200px;
+  }
+}
+
 .arrow-two {
   z-index: -1;
   top: 17px;
+
+  @include breakpoint($desktop) {
+    width: 200px;
+  }
 }
 
 
@@ -94,6 +116,13 @@
   top: -55%;
   left: 53%;
   right: -2%;
+
+  @include breakpoint($desktop) {
+    top: -61%;
+    left: 17%;
+    right: -2%;
+    width: 230px;
+  }
 }
 
 .text-area-two {
@@ -123,6 +152,11 @@
   top: -43px;
   max-width: 466px;
   padding: 16px 37px 10px 27px;
+
+  @include breakpoint($desktop) {
+    max-width: 406px;
+    left: -6px;
+  }
 }
 
 .criteria-wrap {
@@ -139,6 +173,11 @@
     max-width: 748px;
     width: 100%;
     margin-top: -66px;
+
+    @include breakpoint($desktop) {
+      max-width: 618px;
+      margin-top: -16px;
+    }
   }
 }
 
@@ -151,6 +190,10 @@
     color: $black;
     margin-top: -27px;
     padding: 0 24px;
+
+    @include breakpoint($desktop) {
+      padding: 0 4px;
+    }
   }
 }
 
@@ -162,6 +205,12 @@
     left: 57px;
     transform: rotate(90deg);
     width: 125px;
+
+    @include breakpoint($desktop) {
+      top: -45px;
+      left: 77px;
+      width: 85px;
+    }
   }
 }
 
@@ -221,12 +270,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -20px 30px;
+
+  @include breakpoint($desktop) {
+    margin: 0 -10px 30px;
+  }
 }
 
 .card-item {
   width: 33.3%;
   padding: 0 20px;
   margin-bottom: 50px;
+
+  @include breakpoint($desktop) {
+    padding: 0 10px;
+  }
 }
 
 .item-content {
@@ -246,6 +303,10 @@
     margin-bottom: 12px;
     text-align: center;
     padding: 0 70px;
+
+    @include breakpoint($desktop) {
+      padding: 0 20px;
+    }
   }
 
   p {
@@ -370,6 +431,10 @@
   position: relative;
   right: -137px;
   top: -23px;
+
+  @include breakpoint($desktop) {
+    max-width: 850px;
+  }
 }
 
 .our-philosophy-wrap {
@@ -421,6 +486,11 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
+
+  @include breakpoint($desktop) {
+    max-width: 800px;
+    padding: 57px 20px 41px 17px;
+  }
 }
 
 
@@ -488,12 +558,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -40px;
+
+  @include breakpoint($desktop) {
+    margin: 0 -20px;
+  }
 }
 
 .qualities-item {
   width: 50%;
   padding: 0 40px;
   margin-bottom: 28px;
+
+  @include breakpoint($desktop) {
+    padding: 0 20px;
+  }
 }
 
 .qualities-content {
@@ -505,10 +583,19 @@
   padding: 33px 65px 34px 25px;
   min-height: 150px;
 
+  @include breakpoint($desktop) {
+    padding: 36px 35px 35px 35px;
+    min-height: 197px;
+  }
+
   .img-area {
     margin-right: 40px;
     max-width: 55px;
     width: 100%;
+
+    @include breakpoint($desktop) {
+      margin-right: 10px;
+    }
   }
 
   p {
@@ -611,6 +698,10 @@
   border: 4px solid $polo-blue;
   position: relative;
   padding: 47px 77px 42px;
+
+  @include breakpoint($desktop) {
+    padding: 17px;
+  }
 
   &:before {
     content: '';

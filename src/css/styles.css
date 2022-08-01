@@ -181,10 +181,19 @@ input {
   .service-block .img-area {
     max-width: 340px;
     width: 100%; }
+    @media only screen and (max-width: 1308px) {
+      .service-block .img-area {
+        max-width: 270px; } }
   .service-block .img-area-two {
     max-width: 400px; }
+    @media only screen and (max-width: 1308px) {
+      .service-block .img-area-two {
+        max-width: 280px; } }
   .service-block .img-area-three {
     max-width: 435px; }
+    @media only screen and (max-width: 1308px) {
+      .service-block .img-area-three {
+        max-width: 365px; } }
 
 .text-area {
   background: #f0f3f8;
@@ -214,9 +223,16 @@ input {
   left: 0;
   bottom: 0; }
 
+@media only screen and (max-width: 1308px) {
+  .arrow-one {
+    width: 200px; } }
+
 .arrow-two {
   z-index: -1;
   top: 17px; }
+  @media only screen and (max-width: 1308px) {
+    .arrow-two {
+      width: 200px; } }
 
 .service-block-two {
   left: 29%;
@@ -227,6 +243,12 @@ input {
   top: -55%;
   left: 53%;
   right: -2%; }
+  @media only screen and (max-width: 1308px) {
+    .arrow-decoration-two {
+      top: -61%;
+      left: 17%;
+      right: -2%;
+      width: 230px; } }
 
 .text-area-two {
   max-width: 513px;
@@ -251,6 +273,10 @@ input {
   top: -43px;
   max-width: 466px;
   padding: 16px 37px 10px 27px; }
+  @media only screen and (max-width: 1308px) {
+    .text-area-three {
+      max-width: 406px;
+      left: -6px; } }
 
 .criteria-wrap {
   margin-bottom: 65px; }
@@ -264,6 +290,10 @@ input {
     max-width: 748px;
     width: 100%;
     margin-top: -66px; }
+    @media only screen and (max-width: 1308px) {
+      .criteria-content .img-area {
+        max-width: 618px;
+        margin-top: -16px; } }
 
 .criteria-block p {
   font-family: "Mulish", sans-serif;
@@ -273,6 +303,9 @@ input {
   color: #000;
   margin-top: -27px;
   padding: 0 24px; }
+  @media only screen and (max-width: 1308px) {
+    .criteria-block p {
+      padding: 0 4px; } }
 
 .criteria-block-four {
   align-self: end; }
@@ -281,6 +314,11 @@ input {
     left: 57px;
     transform: rotate(90deg);
     width: 125px; }
+    @media only screen and (max-width: 1308px) {
+      .criteria-block-four .line {
+        top: -45px;
+        left: 77px;
+        width: 85px; } }
 
 .number {
   font-family: "Mulish", sans-serif;
@@ -329,11 +367,17 @@ input {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -20px 30px; }
+  @media only screen and (max-width: 1308px) {
+    .card-list {
+      margin: 0 -10px 30px; } }
 
 .card-item {
   width: 33.3%;
   padding: 0 20px;
   margin-bottom: 50px; }
+  @media only screen and (max-width: 1308px) {
+    .card-item {
+      padding: 0 10px; } }
 
 .item-content {
   border-radius: 30px;
@@ -349,6 +393,9 @@ input {
     margin-bottom: 12px;
     text-align: center;
     padding: 0 70px; }
+    @media only screen and (max-width: 1308px) {
+      .item-content h4 {
+        padding: 0 20px; } }
   .item-content p {
     font-weight: 400;
     line-height: 27px;
@@ -442,6 +489,9 @@ input {
   position: relative;
   right: -137px;
   top: -23px; }
+  @media only screen and (max-width: 1308px) {
+    .map-area {
+      max-width: 850px; } }
 
 .our-philosophy-wrap {
   margin-bottom: 334px; }
@@ -484,6 +534,10 @@ input {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2; }
+  @media only screen and (max-width: 1308px) {
+    .text-block {
+      max-width: 800px;
+      padding: 57px 20px 41px 17px; } }
 
 .main-text {
   font-size: 18px;
@@ -532,11 +586,17 @@ input {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -40px; }
+  @media only screen and (max-width: 1308px) {
+    .qualities-list {
+      margin: 0 -20px; } }
 
 .qualities-item {
   width: 50%;
   padding: 0 40px;
   margin-bottom: 28px; }
+  @media only screen and (max-width: 1308px) {
+    .qualities-item {
+      padding: 0 20px; } }
 
 .qualities-content {
   display: flex;
@@ -546,10 +606,17 @@ input {
   border-radius: 30px;
   padding: 33px 65px 34px 25px;
   min-height: 150px; }
+  @media only screen and (max-width: 1308px) {
+    .qualities-content {
+      padding: 36px 35px 35px 35px;
+      min-height: 197px; } }
   .qualities-content .img-area {
     margin-right: 40px;
     max-width: 55px;
     width: 100%; }
+    @media only screen and (max-width: 1308px) {
+      .qualities-content .img-area {
+        margin-right: 10px; } }
   .qualities-content p {
     font-size: 28px;
     line-height: 42px;
@@ -625,6 +692,9 @@ input {
   border: 4px solid #7f94cd;
   position: relative;
   padding: 47px 77px 42px; }
+  @media only screen and (max-width: 1308px) {
+    .form-wrap {
+      padding: 17px; } }
   .form-wrap:before {
     content: '';
     position: absolute;
@@ -796,6 +866,10 @@ input {
     transform: translate(0, -50%);
     max-width: 885px;
     width: 100%; }
+    @media only screen and (max-width: 1308px) {
+      .banner-content .img-area {
+        right: -46px;
+        max-width: 615px; } }
 
 .information-wrap {
   max-width: 712px;

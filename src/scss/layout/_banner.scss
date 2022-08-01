@@ -24,6 +24,11 @@
     transform: translate(0, -50%);
     max-width: 885px;
     width: 100%;
+
+    @include breakpoint($desktop) {
+      right: -46px;
+      max-width: 615px;
+    }
   }
 }
 
