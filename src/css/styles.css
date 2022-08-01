@@ -91,6 +91,12 @@ input {
 .overflow-hidden {
   overflow: hidden; }
 
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-end {
+  justify-content: end; }
+
 .btn {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -247,7 +253,7 @@ input {
   padding: 16px 37px 10px 27px; }
 
 .criteria-wrap {
-  margin-bottom: 50px; }
+  margin-bottom: 65px; }
 
 .criteria-content {
   display: grid;
@@ -310,8 +316,8 @@ input {
   background-image: url("../../images/projects-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 164px 0;
-  margin-bottom: 68px; }
+  padding: 164px 0 172px;
+  margin-bottom: 60px; }
   .projects-wrap .title-block {
     text-align: left;
     margin-bottom: 57px; }
@@ -419,7 +425,8 @@ input {
     position: relative;
     padding: 56px 10px 50px 0;
     max-width: 1033px;
-    width: 100%; }
+    width: 100%;
+    margin-top: -96px; }
     .consultation-abroad-wrap .text:before {
       content: '';
       position: absolute;
@@ -475,7 +482,7 @@ input {
   max-width: 1041px;
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2; }
@@ -518,7 +525,7 @@ input {
     letter-spacing: 1px; }
 
 .our-qualities-wrap {
-  margin-bottom: 100px; }
+  margin-bottom: 72px; }
   .our-qualities-wrap .title-block {
     margin-bottom: 62px; }
 
@@ -551,7 +558,7 @@ input {
     font-weight: 600; }
 
 .qr-code-wrap {
-  margin-bottom: 90px; }
+  margin-bottom: 73px; }
   .qr-code-wrap .title-block {
     margin-bottom: 65px; }
 
@@ -600,6 +607,8 @@ input {
 
 .cooperate-wrap {
   margin-bottom: 100px; }
+  .cooperate-wrap .title-block {
+    margin-bottom: 135px; }
 
 .cooperate-content {
   display: flex;
@@ -811,3 +820,43 @@ input {
   max-width: 513px;
   width: 100%;
   margin-bottom: 67px; }
+
+.footer {
+  padding: 40px 0;
+  background: #7f94cd; }
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 13px; }
+  .socials-list li {
+    display: flex;
+    width: 33.3%;
+    margin-bottom: 37px; }
+  .socials-list a {
+    display: flex;
+    align-items: center;
+    color: #fff; }
+    .socials-list a img {
+      width: 30px;
+      margin-right: 11px; }
+
+.logo-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  max-width: 740px;
+  width: 100%; }
+  .logo-copyright .logo {
+    color: #fff; }
+  .logo-copyright p {
+    display: flex;
+    align-items: center;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    line-height: 21px; }
+  .logo-copyright span {
+    font-size: 42px;
+    margin-right: 9px; }
