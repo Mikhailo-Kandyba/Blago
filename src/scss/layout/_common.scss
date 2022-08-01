@@ -583,3 +583,67 @@
     height: 80px;
   }
 }
+
+.cooperate-wrap {
+  margin-bottom: 100px;
+}
+
+.cooperate-content {
+  display: flex;
+  justify-content: space-between;
+
+  .img-area {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+    max-width: 560px;
+    width: 100%;
+  }
+}
+
+.form-wrap {
+  max-width: 651px;
+  width: 100%;
+  border-radius: 30px;
+  border: 4px solid $polo-blue;
+  position: relative;
+  padding: 47px 77px 42px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -7px;
+    top: -161px;
+    background-image: url("../../images/decoration-2.png");
+    width: 360px;
+    height: 335px;
+    z-index: -1;
+  }
+
+  p {
+    font-weight: $font-weight-700;
+    font-size: $font-size-base + 10;
+    line-height: $line-height-base + 18;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 72px;
+  }
+}
+
+.form-group {
+  margin-bottom: 30px;
+
+  input {
+    font-size: $font-size-base + 10;
+    line-height: $line-height-base + 6;
+    height: 100px;
+    padding: 35px;
+    width: 100%;
+    border-radius: 30px;
+    background: $scotch-mist;
+    
+    &::placeholder {
+      color: $mine-shaft;
+    }
+  }
+}
