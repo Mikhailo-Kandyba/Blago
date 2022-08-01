@@ -430,8 +430,10 @@ input {
   right: -137px;
   top: -23px; }
 
-.our-philosophy .title-block {
-  margin-bottom: 121px; }
+.our-philosophy-wrap {
+  margin-bottom: 334px; }
+  .our-philosophy-wrap .title-block {
+    margin-bottom: 121px; }
 
 .information-text {
   font-size: 28px;
@@ -471,6 +473,7 @@ input {
   z-index: 2; }
 
 .main-text {
+  font-size: 18px;
   line-height: 27px;
   color: #000;
   margin-bottom: 5px; }
@@ -505,6 +508,39 @@ input {
     text-align: left;
     color: #000;
     letter-spacing: 1px; }
+
+.our-qualities-wrap {
+  margin-bottom: 100px; }
+  .our-qualities-wrap .title-block {
+    margin-bottom: 62px; }
+
+.qualities-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -40px; }
+
+.qualities-item {
+  width: 50%;
+  padding: 0 40px;
+  margin-bottom: 28px; }
+
+.qualities-content {
+  display: flex;
+  align-items: center;
+  background: #f0f3f8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 33px 75px 34px 25px;
+  min-height: 150px; }
+  .qualities-content .img-area {
+    margin-right: 40px;
+    max-width: 55px;
+    width: 100%; }
+  .qualities-content p {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 600; }
 
 .header {
   position: absolute;

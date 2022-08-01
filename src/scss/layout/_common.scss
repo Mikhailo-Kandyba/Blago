@@ -373,7 +373,9 @@
   top: -23px;
 }
 
-.our-philosophy {
+.our-philosophy-wrap {
+  margin-bottom: 334px;
+
   .title-block {
     margin-bottom: 121px;
   }
@@ -424,6 +426,7 @@
 
 
 .main-text {
+  font-size: $font-size-base;
   line-height: $line-height-base + 5;
   color: $black;
   margin-bottom: 5px;
@@ -470,5 +473,48 @@
     text-align: left;
     color: $black;
     letter-spacing: 1px;
+  }
+}
+
+.our-qualities-wrap {
+  margin-bottom: 100px;
+
+  .title-block {
+    margin-bottom: 62px;
+  }
+}
+
+.qualities-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+
+.qualities-item {
+  width: 50%;
+  padding: 0 40px;
+  margin-bottom: 28px;
+}
+
+.qualities-content {
+  display: flex;
+  align-items: center;
+  background: $catskill-white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 33px 75px 34px 25px;
+  min-height: 150px;
+
+  .img-area {
+    margin-right: 40px;
+    max-width: 55px;
+    width: 100%;
+  }
+
+  p {
+    font-size: $font-size-base + 6;
+    line-height: $line-height-base + 20;
+    font-weight: $font-weight-600;
   }
 }
