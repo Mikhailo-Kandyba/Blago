@@ -198,3 +198,143 @@
     z-index: 1;
   }
 }
+
+.projects-wrap {
+  background-image: url("../../images/projects-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 164px 0;
+  margin-bottom: 50px;
+
+  .title-block {
+    text-align: left;
+    margin-bottom: 57px;
+
+    span {
+      border-color: $white;
+    }
+  }
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px 30px;
+}
+
+.card-item {
+  width: 33.3%;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.item-content {
+  border-radius: 30px;
+  background: $white;
+
+  .img-area {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  h4 {
+    font-family: $font-mulish;
+    font-weight: $font-weight-600;
+    font-size: $font-size-base + 10;
+    line-height: $line-height-base + 20;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 0 70px;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-weight: $font-weight-400;
+    line-height: $line-height-base + 5;
+    padding:  0 25px;
+    margin-bottom: 23px;
+  }
+}
+
+.price-list {
+  padding: 0 25px;
+  margin-bottom: -22px;
+
+  li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 18px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: $polo-blue;
+      width: 4px;
+    }
+
+    strong {
+      display: block;
+      font-weight: $font-weight-700;
+      font-size: $font-size-base + 29;
+      line-height: $line-height-base + 22;
+      color: $polo-blue;
+      margin-bottom: -1px;
+    }
+
+    sub {
+      font-size: $font-size-base;
+    }
+
+    p {
+      font-weight: $font-weight-700;
+      line-height: $line-height-base + 5;
+      padding: 0;
+      margin: 0;
+    }
+
+    .collected {
+      color: $periwinkle-gray;
+    }
+  }
+}
+
+.holder-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -30px;
+}
+
+.holder-link {
+  display: flex;
+  justify-content: end;
+}
+
+.link-projects {
+  font-size: $font-size-base + 10;
+  line-height: $line-height-base + 20;
+  position: relative;
+  padding: 0 84px 0 0;
+
+  &:hover {
+    &:after {
+      filter: contrast(20%);
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-image: url("../../images/arrow.svg");
+    width: 52px;
+    height: 24px;
+  }
+}

@@ -132,6 +132,14 @@ input {
     width: 52px;
     height: 24px; }
 
+.btn-card {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  padding: 16px 20px;
+  min-width: 300px;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25); }
+
 .title-block {
   font-family: "Mulish", sans-serif;
   font-weight: 1000;
@@ -289,6 +297,110 @@ input {
     height: 25px;
     border-radius: 50%;
     z-index: 1; }
+
+.projects-wrap {
+  background-image: url("../../images/projects-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 164px 0;
+  margin-bottom: 50px; }
+  .projects-wrap .title-block {
+    text-align: left;
+    margin-bottom: 57px; }
+    .projects-wrap .title-block span {
+      border-color: #fff; }
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -20px 30px; }
+
+.card-item {
+  width: 33.3%;
+  padding: 0 20px;
+  margin-bottom: 50px; }
+
+.item-content {
+  border-radius: 30px;
+  background: #fff; }
+  .item-content .img-area {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 16px; }
+  .item-content h4 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 0 70px;
+    letter-spacing: 1.5px; }
+  .item-content p {
+    font-weight: 400;
+    line-height: 27px;
+    padding: 0 25px;
+    margin-bottom: 23px; }
+
+.price-list {
+  padding: 0 25px;
+  margin-bottom: -22px; }
+  .price-list li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 18px; }
+    .price-list li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: #7f94cd;
+      width: 4px; }
+    .price-list li strong {
+      display: block;
+      font-weight: 700;
+      font-size: 47px;
+      line-height: 44px;
+      color: #7f94cd;
+      margin-bottom: -1px; }
+    .price-list li sub {
+      font-size: 18px; }
+    .price-list li p {
+      font-weight: 700;
+      line-height: 27px;
+      padding: 0;
+      margin: 0; }
+    .price-list li .collected {
+      color: #bfc9e6; }
+
+.holder-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -30px; }
+
+.holder-link {
+  display: flex;
+  justify-content: end; }
+
+.link-projects {
+  font-size: 28px;
+  line-height: 42px;
+  position: relative;
+  padding: 0 84px 0 0; }
+  .link-projects:hover:after {
+    filter: contrast(20%); }
+  .link-projects:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-image: url("../../images/arrow.svg");
+    width: 52px;
+    height: 24px; }
 
 .header {
   position: absolute;
