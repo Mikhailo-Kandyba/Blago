@@ -303,7 +303,7 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 164px 0;
-  margin-bottom: 50px; }
+  margin-bottom: 68px; }
   .projects-wrap .title-block {
     text-align: left;
     margin-bottom: 57px; }
@@ -401,6 +401,34 @@ input {
     background-image: url("../../images/arrow.svg");
     width: 52px;
     height: 24px; }
+
+.consultation-abroad-wrap {
+  margin-bottom: 100px; }
+  .consultation-abroad-wrap .text {
+    font-size: 28px;
+    line-height: 41px;
+    color: #000;
+    position: relative;
+    padding: 56px 10px 50px 0;
+    max-width: 1033px;
+    width: 100%; }
+    .consultation-abroad-wrap .text:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -311px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      background: #fff590;
+      border-radius: 30px;
+      z-index: -1; }
+
+.map-area {
+  max-width: 1110px;
+  position: relative;
+  right: -137px;
+  top: -23px; }
 
 .header {
   position: absolute;
