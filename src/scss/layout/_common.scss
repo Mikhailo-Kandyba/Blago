@@ -17,15 +17,32 @@
   }
 }
 
+.about-us {
+  margin-bottom: 95px;
+}
+
 .service-wrap {
   position: relative;
-  min-height: 1400px;
+  min-height: 1185px;
 }
 
 .service-block {
   max-width: 366px;
   width: 100%;
   position: absolute;
+
+  .img-area {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .img-area-two {
+    max-width: 400px;
+  }
+
+  .img-area-three {
+    max-width: 435px;
+  }
 }
 
 .text-area {
@@ -43,11 +60,6 @@
     line-height: $line-height-base + 12;
     color: $polo-blue;
   }
-}
-
-.img-area {
-  max-width: 340px;
-  width: 100%;
 }
 
 .arrow-decoration {
@@ -74,7 +86,7 @@
 
 .service-block-two {
   left: 29%;
-  bottom: 138px;
+  bottom: -83px;
   max-width: 574px;
 }
 
@@ -82,10 +94,6 @@
   top: -55%;
   left: 53%;
   right: -2%;
-}
-
-.img-area-two {
-  max-width: 400px;
 }
 
 .text-area-two {
@@ -110,13 +118,83 @@
   max-width: 500px;
 }
 
-.img-area-three {
-  max-width: 435px;
-}
-
 .text-area-three {
   left: -64px;
   top: -43px;
   max-width: 466px;
   padding: 16px 37px 10px 27px;
+}
+
+.criteria-wrap {
+  margin-bottom: 50px;
+}
+
+.criteria-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .img-area {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    max-width: 748px;
+    width: 100%;
+    margin-top: -66px;
+  }
+}
+
+.criteria-block {
+  p {
+    font-family: $font-mulish;
+    font-weight: $font-weight-600;
+    font-size: $font-size-base + 10;
+    line-height: $line-height-base + 19;
+    color: $black;
+    margin-top: -27px;
+    padding: 0 24px;
+  }
+}
+
+.criteria-block-four {
+  align-self: end;
+
+  .line {
+    top: -85px;
+    left: 57px;
+    transform: rotate(90deg);
+    width: 125px;
+  }
+}
+
+.number {
+  font-family: $font-mulish;
+  font-weight: $font-weight-1000;
+  font-size: $font-size-base + 162;
+  line-height: $line-height-base + 61;
+  color: rgba(197, 215, 239, 0.2);
+  position: relative;
+  z-index: -1;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 219px;
+  height: 9px;
+  background: $catskill-white;
+  border-radius: 20px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $catskill-white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 1;
+  }
 }
