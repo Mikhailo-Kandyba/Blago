@@ -4,11 +4,11 @@
 .btn {
   font-family: $base-font-default;
   font-size: $font-size-base + 6;
-  line-height: $line-height-base + 8;
+  line-height: $line-height-base + 7;
   font-weight: $font-weight-600;
   border-radius: 30px;
   background: $witch-haze;
-  padding: 22px 25px;
+  padding: 23px 25px;
   min-width: 270px;
 
   &:hover {
@@ -67,7 +67,7 @@
   width: 100%;
   font-weight: $font-weight-700;
   font-size: $font-size-base + 10;
-  line-height: $line-height-base + 7;
+  line-height: $line-height-base + 5;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
   padding: 36px 20px;
 }
