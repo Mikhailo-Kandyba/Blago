@@ -15,6 +15,12 @@
     line-height: $line-height-base + 23;
   }
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 5;
+    line-height: $line-height-base + 15;
+    margin-bottom: 45px;
+  }
+
   span {
     border-bottom: 4px solid $witch-haze;
     letter-spacing: 11px;
@@ -22,6 +28,10 @@
 
     @include breakpoint($tablet) {
       letter-spacing: 5px;
+    }
+
+    @include breakpoint($mobile) {
+      letter-spacing: 1px;
     }
   }
 }
@@ -32,11 +42,20 @@
   @include breakpoint($tablet) {
     margin-bottom: 295px;
   }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
+  }
 }
 
 .service-wrap {
   position: relative;
   min-height: 1185px;
+
+  @include breakpoint($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .service-block {
@@ -48,12 +67,23 @@
     max-width: 335px;
   }
 
+  @include breakpoint($mobile) {
+    position: static;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
   .img-area {
     max-width: 340px;
     width: 100%;
 
     @include breakpoint($desktop) {
       max-width: 270px;
+    }
+
+    @include breakpoint($mobile) {
+      margin: 0 auto;
+      max-width: 210px;
     }
   }
 
@@ -88,10 +118,21 @@
   top: -51px;
   z-index: 1;
 
+  @include breakpoint($mobile) {
+    position: static;
+    line-height: $line-height-base;
+    padding: 12px;
+  }
+
   strong {
     font-size: $font-size-base + 17;
     line-height: $line-height-base + 12;
     color: $polo-blue;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 12;
+      line-height: $line-height-base + 8;
+    }
   }
 }
 
@@ -111,6 +152,10 @@
     transform: rotate(61deg);
     bottom: -25px;
     left: 83px;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
   }
 }
 
@@ -137,6 +182,10 @@
     left: 0;
     bottom: -27%;
     max-width: 384px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
   }
 }
 
@@ -169,6 +218,10 @@
     top: -58px;
     right: -29px;
   }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
 }
 
 .arrow-three {
@@ -190,6 +243,10 @@
     max-width: 350px;
     right: 0;
   }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
 }
 
 .text-area-three {
@@ -202,10 +259,19 @@
     max-width: 406px;
     left: -6px;
   }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    padding: 12px;
+  }
 }
 
 .criteria-wrap {
   margin-bottom: 65px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
+  }
 
   .title-block {
     @include breakpoint($tablet) {
@@ -217,6 +283,10 @@
 .criteria-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @include breakpoint($mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .img-area {
     grid-column: 1/3;
@@ -232,6 +302,13 @@
 
     @include breakpoint($tablet) {
       max-width: 458px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+      grid-column: 1/1;
+      grid-row: 1/2;
+      margin-top: 0;
     }
   }
 }
@@ -306,6 +383,10 @@
     width: 129px;
   }
 
+  @include breakpoint($mobile) {
+    display: none;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -331,6 +412,11 @@
     padding: 84px 0 92px;
   }
 
+  @include breakpoint($mobile) {
+    padding: 164px 0 122px;
+    margin-bottom: 0;
+  }
+
   .title-block {
     text-align: left;
     margin-bottom: 57px;
@@ -350,6 +436,10 @@
   @include breakpoint($desktop) {
     margin: 0 -10px 30px;
   }
+
+  @include breakpoint($mobile) {
+    margin: 0 -20px 15px;
+  }
 }
 
 .card-item {
@@ -359,6 +449,10 @@
 
   @include breakpoint($desktop) {
     padding: 0 10px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
   }
 }
 
@@ -389,6 +483,11 @@
       line-height: $line-height-base;
       padding: 0 5px;
     }
+
+    @include breakpoint($mobile) {
+      padding: 0 12px;
+      text-align: left;
+    }
   }
 
   p {
@@ -401,6 +500,10 @@
       line-height: $line-height-base;
       padding: 0 5px;
     }
+
+    @include breakpoint($mobile) {
+      padding: 0 12px;
+    }
   }
 }
 
@@ -410,6 +513,10 @@
 
   @include breakpoint($tablet) {
     padding: 0 5px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 12px;
   }
 
   li {
@@ -479,6 +586,12 @@
     font-size: $font-size-base + 5;
   }
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 3;
+    padding: 0 52px 0 0;
+  }
+
   &:hover {
     &:after {
       filter: contrast(20%);
@@ -500,6 +613,10 @@
 .consultation-abroad-wrap {
   margin-bottom: 100px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 60px;
+  }
+
   .title-block {
     @include breakpoint($tablet) {
       margin-bottom: 50px;
@@ -520,6 +637,11 @@
       font-size: $font-size-base + 4;
       line-height: $line-height-base + 13;
       margin-top: -56px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
     }
 
     &:before {
@@ -558,6 +680,10 @@
 .our-philosophy-wrap {
   margin-bottom: 334px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 35px;
+  }
+
   .title-block {
     margin-bottom: 121px;
   }
@@ -574,6 +700,11 @@
     font-size: $font-size-base + 2;
     line-height: $line-height-base + 9;
     padding: 41px 40px 10px 248px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 10px;
+    min-height: auto;
   }
 
   &:before {
@@ -596,6 +727,10 @@
     width: 278px;
     height: 576px;
     z-index: -1;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 }
 
@@ -618,6 +753,13 @@
 
   @include breakpoint($tablet) {
     max-width: 630px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    position: static;
+    transform: translate(0, 0);
+    padding: 10px;
   }
 }
 
@@ -647,6 +789,10 @@
   flex-wrap: wrap;
   margin: 0 -10px 38px;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   li {
     display: flex;
     flex-direction: column;
@@ -655,16 +801,29 @@
     padding: 0 10px;
     margin-bottom: 10px;
 
+    @include breakpoint($mobile) {
+      width: 100%;
+      align-items: flex-start;
+    }
+
     &:nth-child(2) {
       width: 40%;
 
       @include breakpoint($tablet) {
         width: 44%;
       }
+
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
     }
 
     &:nth-child(3) {
       width: 25%;
+
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
     }
   }
 
@@ -694,8 +853,16 @@
 .our-qualities-wrap {
   margin-bottom: 72px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 30px;
+  }
+
   .title-block {
     margin-bottom: 62px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -708,6 +875,10 @@
   @include breakpoint($desktop) {
     margin: 0 -20px;
   }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
 }
 
 .qualities-item {
@@ -717,6 +888,11 @@
 
   @include breakpoint($desktop) {
     padding: 0 20px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -751,6 +927,10 @@
     @include breakpoint($tablet) {
       max-width: 45px;
     }
+
+    @include breakpoint($mobile) {
+      max-width: 25px;
+    }
   }
 
   p {
@@ -768,8 +948,16 @@
 .qr-code-wrap {
   margin-bottom: 73px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 30px;
+  }
+
   .title-block {
     margin-bottom: 65px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -782,6 +970,10 @@
   @include breakpoint($tablet) {
     margin: 0 -10px;
   }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
 }
 
 .qr-code-item {
@@ -791,6 +983,10 @@
 
   @include breakpoint($tablet) {
     padding: 0 10px;
+  }
+
+  @include breakpoint($mobile) {
+    width: 100%;
   }
 }
 
@@ -845,8 +1041,16 @@
 .cooperate-wrap {
   margin-bottom: 100px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 60px;
+  }
+
   .title-block {
     margin-bottom: 135px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -854,12 +1058,22 @@
   display: flex;
   justify-content: space-between;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   .img-area {
     border-radius: 30px;
     overflow: hidden;
     margin-right: 10px;
     max-width: 560px;
     width: 100%;
+
+    @include breakpoint($mobile) {
+      margin-right: 0;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -875,6 +1089,10 @@
     padding: 17px;
   }
 
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -884,6 +1102,10 @@
     width: 360px;
     height: 335px;
     z-index: -1;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 
   p {
@@ -898,6 +1120,10 @@
       font-size: $font-size-base;
       line-height: $line-height-base;
       margin-bottom: 38px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
     }
   }
 }
@@ -919,6 +1145,12 @@
       line-height: $line-height-base - 4;
       height: 70px;
       padding: 15px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 10px 18px;
+      height: 60px;
+      border-radius: 15px;
     }
     
     &::placeholder {

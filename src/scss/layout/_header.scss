@@ -8,6 +8,10 @@
   top: 0;
   padding: 30px 0;
   z-index: 1;
+
+  @include breakpoint($mobile) {
+    padding: 10px 0;
+  }
 }
 
 .btn-wrap {
@@ -20,6 +24,12 @@
 
   @include breakpoint($tablet) {
     padding-bottom: 17px;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    border: none;
+    padding: 0 15px;
   }
 }
 
@@ -42,7 +52,7 @@
 
   @include breakpoint($mobile) {
     position: fixed;
-    z-index: 25;
+    z-index: 25 !important;
     top: 0;
     left: 200%;
     width: 100%;
@@ -53,7 +63,7 @@
   @include breakpoint($mobile) {
     flex-direction: column;
     min-height: 100vh;
-    //background: $steel-gray;
+    background: $periwinkle-gray;
     justify-content: space-between;
   }
 
@@ -66,10 +76,10 @@
 
     @include breakpoint($mobile) {
       display: block;
-      padding: 80px 15px;
-      //background: $steel-gray;
+      padding: 40px 15px 30px;
       min-width: inherit;
       text-align: center;
+      order: -1;
     }
 
     li {
@@ -77,6 +87,10 @@
 
       @include breakpoint($tablet) {
         margin: 0 5px;
+      }
+
+      @include breakpoint($mobile) {
+        margin: 0;
       }
 
       a {
@@ -89,8 +103,6 @@
         }
 
         @include breakpoint($mobile) {
-          //font-family: $font-montserrat;
-          //font-weight: $font-weight-300;
           line-height: $line-height-base + 1;
           padding: 6px 10px;
         }

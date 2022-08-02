@@ -16,6 +16,11 @@
     padding: 175px 0 90px;
     min-height: 576px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 65px 0;
+    min-height: 415px;
+  }
 }
 
 .banner-content {
@@ -41,6 +46,10 @@
       right: 0;
       max-width: 383px;
     }
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 }
 
@@ -53,6 +62,11 @@
 
   @include breakpoint($tablet) {
     max-width: 410px;
+  }
+
+  @include breakpoint($mobile) {
+    z-index: 0;
+    max-width: 100%;
   }
 }
 
@@ -68,6 +82,11 @@
     line-height: $line-height-base + 38;
     margin-bottom: 20px;
   }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 18;
+    line-height: $line-height-base + 18;
+  }
 }
 
 .subtitle {
@@ -82,5 +101,10 @@
     max-width: 100%;
     font-size: $font-size-base + 12;
     line-height: $line-height-base + 16;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 }

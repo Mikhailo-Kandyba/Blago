@@ -18,3 +18,17 @@
   justify-content: end;
 }
 
+.display-sm-block {
+  display: none !important;
+
+  @include breakpoint($mobile) {
+    display: block !important;
+  }
+}
+
+.display-sm-none {
+  @include breakpoint($mobile) {
+    display: none !important;
+  }
+}
+

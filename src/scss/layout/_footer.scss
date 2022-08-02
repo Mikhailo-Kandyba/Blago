@@ -4,6 +4,10 @@
 .footer {
   padding: 40px 0;
   background: $polo-blue;
+
+  @include breakpoint($mobile) {
+    padding: 20px 0;
+  }
 }
 
 .socials-list {
@@ -12,6 +16,10 @@
   flex-wrap: wrap;
   margin-bottom: 13px;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   li {
     display: flex;
     width: 33.3%;
@@ -19,6 +27,11 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 17px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      justify-content: flex-start;
     }
   }
 
@@ -46,8 +59,17 @@
   max-width: 740px;
   width: 100%;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .logo {
     color: $white;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 5px;
+    }
   }
 
   p {
@@ -61,5 +83,9 @@
   span {
     font-size: $font-size-base + 24;
     margin-right: 9px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 12;
+    }
   }
 }
