@@ -17,6 +17,10 @@
   padding-bottom: 27px;
   border-bottom: 5px solid $white;
   margin-bottom: 9px;
+
+  @include breakpoint($tablet) {
+    padding-bottom: 17px;
+  }
 }
 
 .logo {
@@ -25,13 +29,18 @@
   font-size: $font-size-base + 28;
   line-height: $line-height-base + 32;
   text-transform: uppercase;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 18;
+    line-height: $line-height-base + 28;
+  }
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
 
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     position: fixed;
     z-index: 25;
     top: 0;
@@ -41,7 +50,7 @@
     max-width: inherit;
   }
 
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     flex-direction: column;
     min-height: 100vh;
     //background: $steel-gray;
@@ -55,7 +64,7 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($mobile) {
       display: block;
       padding: 80px 15px;
       //background: $steel-gray;
@@ -66,10 +75,18 @@
     li {
       margin: 0 14px;
 
+      @include breakpoint($tablet) {
+        margin: 0 5px;
+      }
+
       a {
         display: block;
         padding: 10px;
         text-transform: uppercase;
+
+        @include breakpoint($tablet) {
+          padding: 5px;
+        }
 
         @include breakpoint($mobile) {
           //font-family: $font-montserrat;
@@ -96,7 +113,7 @@
   border: none;
   background: $transparent;
 
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     display: block;
   }
 
@@ -107,7 +124,7 @@
   }
 
   span {
-    //background: $carnation;
+    background: $black;
     border: none;
     height: 2px;
     width: 100%;
@@ -156,7 +173,7 @@
 }
 
 .show-menu {
-  @include breakpoint($tablet) {
+  @include breakpoint($mobile) {
     left: 0;
   }
 }

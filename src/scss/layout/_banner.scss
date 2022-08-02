@@ -9,6 +9,13 @@
   min-height: 1075px;
   padding: 275px 0 90px;
   margin-bottom: 56px;
+
+  @include breakpoint($tablet) {
+    display: flex;
+    align-items: center;
+    padding: 175px 0 90px;
+    min-height: 576px;
+  }
 }
 
 .banner-content {
@@ -29,6 +36,11 @@
       right: -46px;
       max-width: 615px;
     }
+
+    @include breakpoint($tablet) {
+      right: 0;
+      max-width: 383px;
+    }
   }
 }
 
@@ -38,14 +50,24 @@
   color: $white;
   position: relative;
   z-index: 1;
+
+  @include breakpoint($tablet) {
+    max-width: 410px;
+  }
 }
 
-.title {
+.title-banner {
   font-family: $font-mulish;
   font-weight: $font-weight-1000;
   font-size: $font-size-base + 78;
   line-height: $line-height-base + 98;
   margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 38;
+    line-height: $line-height-base + 38;
+    margin-bottom: 20px;
+  }
 }
 
 .subtitle {
@@ -55,4 +77,10 @@
   max-width: 513px;
   width: 100%;
   margin-bottom: 69px;
+
+  @include breakpoint($tablet) {
+    max-width: 100%;
+    font-size: $font-size-base + 12;
+    line-height: $line-height-base + 16;
+  }
 }

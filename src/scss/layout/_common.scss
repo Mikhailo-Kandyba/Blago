@@ -10,15 +10,28 @@
   text-align: center;
   margin-bottom: 94px;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 12;
+    line-height: $line-height-base + 23;
+  }
+
   span {
     border-bottom: 4px solid $witch-haze;
     letter-spacing: 11px;
     padding-bottom: 3px;
+
+    @include breakpoint($tablet) {
+      letter-spacing: 5px;
+    }
   }
 }
 
 .about-us {
   margin-bottom: 95px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 295px;
+  }
 }
 
 .service-wrap {
@@ -30,6 +43,10 @@
   max-width: 366px;
   width: 100%;
   position: absolute;
+
+  @include breakpoint($tablet) {
+    max-width: 335px;
+  }
 
   .img-area {
     max-width: 340px;
@@ -45,6 +62,10 @@
 
     @include breakpoint($desktop) {
       max-width: 280px;
+    }
+
+    @include breakpoint($tablet) {
+      max-width: 220px;
     }
   }
 
@@ -80,6 +101,17 @@
   left: 76px;
   right: 0;
   z-index: 2;
+
+  @include breakpoint($desktop) {
+    width: 200px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 160px;
+    transform: rotate(61deg);
+    bottom: -25px;
+    left: 83px;
+  }
 }
 
 .arrow {
@@ -90,19 +122,9 @@
   bottom: 0;
 }
 
-.arrow-one {
-  @include breakpoint($desktop) {
-    width: 200px;
-  }
-}
-
 .arrow-two {
   z-index: -1;
   top: 17px;
-
-  @include breakpoint($desktop) {
-    width: 200px;
-  }
 }
 
 
@@ -110,6 +132,12 @@
   left: 29%;
   bottom: -83px;
   max-width: 574px;
+
+  @include breakpoint($tablet) {
+    left: 0;
+    bottom: -27%;
+    max-width: 384px;
+  }
 }
 
 .arrow-decoration-two {
@@ -123,12 +151,24 @@
     right: -2%;
     width: 230px;
   }
+
+  @include breakpoint($tablet) {
+    top: -11%;
+    left: 70%;
+    width: 140px;
+    transform: rotate(0deg);
+  }
 }
 
 .text-area-two {
   max-width: 513px;
   top: -88px;
   right: -59px;
+
+  @include breakpoint($tablet) {
+    top: -58px;
+    right: -29px;
+  }
 }
 
 .arrow-three {
@@ -145,6 +185,11 @@
   right: -98px;
   top: -40px;
   max-width: 500px;
+
+  @include breakpoint($tablet) {
+    max-width: 350px;
+    right: 0;
+  }
 }
 
 .text-area-three {
@@ -161,6 +206,12 @@
 
 .criteria-wrap {
   margin-bottom: 65px;
+
+  .title-block {
+    @include breakpoint($tablet) {
+      margin-bottom: 44px;
+    }
+  }
 }
 
 .criteria-content {
@@ -178,6 +229,10 @@
       max-width: 618px;
       margin-top: -16px;
     }
+
+    @include breakpoint($tablet) {
+      max-width: 458px;
+    }
   }
 }
 
@@ -193,6 +248,11 @@
 
     @include breakpoint($desktop) {
       padding: 0 4px;
+    }
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
     }
   }
 }
@@ -211,6 +271,10 @@
       left: 77px;
       width: 85px;
     }
+
+    @include breakpoint($tablet) {
+      left: 27px;
+    }
   }
 }
 
@@ -222,6 +286,10 @@
   color: rgba(197, 215, 239, 0.2);
   position: relative;
   z-index: -1;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 82;
+  }
 }
 
 .line {
@@ -233,6 +301,10 @@
   height: 9px;
   background: $catskill-white;
   border-radius: 20px;
+
+  @include breakpoint($tablet) {
+    width: 129px;
+  }
 
   &:after {
     content: '';
@@ -254,6 +326,10 @@
   background-repeat: no-repeat;
   padding: 164px 0 172px;
   margin-bottom: 60px;
+
+  @include breakpoint($tablet) {
+    padding: 84px 0 92px;
+  }
 
   .title-block {
     text-align: left;
@@ -307,6 +383,12 @@
     @include breakpoint($desktop) {
       padding: 0 20px;
     }
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      padding: 0 5px;
+    }
   }
 
   p {
@@ -314,12 +396,21 @@
     line-height: $line-height-base + 5;
     padding:  0 25px;
     margin-bottom: 23px;
+
+    @include breakpoint($tablet) {
+      line-height: $line-height-base;
+      padding: 0 5px;
+    }
   }
 }
 
 .price-list {
   padding: 0 25px;
   margin-bottom: -22px;
+
+  @include breakpoint($tablet) {
+    padding: 0 5px;
+  }
 
   li {
     position: relative;
@@ -343,6 +434,10 @@
       line-height: $line-height-base + 22;
       color: $polo-blue;
       margin-bottom: -1px;
+
+      @include breakpoint($tablet) {
+        font-size: $font-size-base + 20;
+      }
     }
 
     sub {
@@ -380,6 +475,10 @@
   position: relative;
   padding: 0 84px 0 0;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 5;
+  }
+
   &:hover {
     &:after {
       filter: contrast(20%);
@@ -401,6 +500,12 @@
 .consultation-abroad-wrap {
   margin-bottom: 100px;
 
+  .title-block {
+    @include breakpoint($tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
   .text {
     font-size: $font-size-base + 10;
     line-height: $line-height-base + 19;
@@ -410,6 +515,12 @@
     max-width: 1033px;
     width: 100%;
     margin-top: -96px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 4;
+      line-height: $line-height-base + 13;
+      margin-top: -56px;
+    }
 
     &:before {
       content: '';
@@ -435,6 +546,13 @@
   @include breakpoint($desktop) {
     max-width: 850px;
   }
+
+  @include breakpoint($tablet) {
+    right: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    top: 0;
+  }
 }
 
 .our-philosophy-wrap {
@@ -451,6 +569,12 @@
   padding: 41px 100px 10px 248px;
   position: relative;
   min-height: 450px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 9;
+    padding: 41px 40px 10px 248px;
+  }
 
   &:before {
     content: '';
@@ -491,6 +615,10 @@
     max-width: 800px;
     padding: 57px 20px 41px 17px;
   }
+
+  @include breakpoint($tablet) {
+    max-width: 630px;
+  }
 }
 
 
@@ -505,6 +633,11 @@
     font-size: $font-size-base + 17;
     line-height: $line-height-base + 27;
     color: $polo-blue;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base + 4;
+      line-height: $line-height-base + 3;
+    }
   }
 }
 
@@ -524,6 +657,10 @@
 
     &:nth-child(2) {
       width: 40%;
+
+      @include breakpoint($tablet) {
+        width: 44%;
+      }
     }
 
     &:nth-child(3) {
@@ -533,6 +670,11 @@
 
   .img-area {
     margin-bottom: 20px;
+
+    @include breakpoint($tablet) {
+      max-width: 50px;
+      width: 100%;
+    }
   }
 
   p {
@@ -542,6 +684,10 @@
     text-align: left;
     color: $black;
     letter-spacing: 1px;
+
+    @include breakpoint($tablet) {
+      line-height: $line-height-base;
+    }
   }
 }
 
@@ -588,6 +734,11 @@
     min-height: 197px;
   }
 
+  @include breakpoint($tablet) {
+    padding: 15px;
+    min-height: 137px;
+  }
+
   .img-area {
     margin-right: 40px;
     max-width: 55px;
@@ -596,12 +747,21 @@
     @include breakpoint($desktop) {
       margin-right: 10px;
     }
+
+    @include breakpoint($tablet) {
+      max-width: 45px;
+    }
   }
 
   p {
     font-size: $font-size-base + 10;
     line-height: $line-height-base + 20;
     font-weight: $font-weight-600;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
   }
 }
 
@@ -618,18 +778,30 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -20px;
+
+  @include breakpoint($tablet) {
+    margin: 0 -10px;
+  }
 }
 
 .qr-code-item {
   width: 33.3%;
   padding: 0 20px;
   margin-bottom: 30px;
+
+  @include breakpoint($tablet) {
+    padding: 0 10px;
+  }
 }
 
 .qr-code-content {
   border-radius: 30px;
   padding: 60px 45px;
   position: relative;
+
+  @include breakpoint($tablet) {
+    padding:  10px;
+  }
 
   &:after {
     content: '';
@@ -721,6 +893,12 @@
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 68px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      margin-bottom: 38px;
+    }
   }
 }
 
@@ -735,6 +913,13 @@
     width: 100%;
     border-radius: 30px;
     background: $scotch-mist;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base;
+      line-height: $line-height-base - 4;
+      height: 70px;
+      padding: 15px;
+    }
     
     &::placeholder {
       color: $mine-shaft;

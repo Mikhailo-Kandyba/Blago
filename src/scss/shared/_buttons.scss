@@ -11,6 +11,13 @@
   padding: 23px 25px;
   min-width: 270px;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    padding: 15px;
+    min-width: 220px;
+  }
+
   &:hover {
     background: $portica;
   }
@@ -42,6 +49,13 @@
   max-width: 434px;
   width: 100%;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 5;
+    line-height: $line-height-base + 3;
+    padding: 13px 88px 13px 23px;
+    max-width: 294px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -51,6 +65,10 @@
     background-image: url("../../images/arrow.svg");
     width: 52px;
     height: 24px;
+
+    @include breakpoint($tablet) {
+      right: 31px;
+    }
   }
 }
 
@@ -61,6 +79,13 @@
   padding: 16px 20px;
   min-width: 300px;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    padding: 15px;
+    min-width: 190px;
+  }
 }
 
 .btn-form {
@@ -70,4 +95,10 @@
   line-height: $line-height-base + 5;
   box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
   padding: 36px 20px;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    padding: 20px;
+  }
 }
